@@ -1,1 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+
+        <nav>
+
+            <section class="burger">
+                <button onclick="burger(event)">
+                    <div class="lines lines-1"></div>
+                    <div class="lines lines-2"></div>
+                    <div class="lines lines-3"></div>
+                </button>
+            </section>
+
+
+            <img src="./img/activision_logo_white-text.png" alt="">
+
+            <section class="nav">
+                <section class="l-nav">
+
+
+                    <section class="nav-menu">
+
+                        <section class="nav-menu-item">
+                            <button>GAMES</button>
+                        </section>
+
+                        <section class="nav-menu-item">
+
+                            <button onclick=" clickheight(0)">ABOUT <i class="ri-arrow-down-s-line"></i></button>
+
+                            <ul>
+                                <li><a href="#">About Us</a> </li>
+                                <li><a href="#">Studios And Locations</a></li>
+                                <li><a href="#">Ratings & Resources</a></li>
+                                <li><a href="#">Playtest</a></li>
+
+                            </ul>
+
+
+
+                        </section>
+
+
+                        <section class="nav-menu-item">
+
+                            <button onclick=" clickheight(1)">CAREERS <i class="ri-arrow-down-s-line"></i></button>
+
+                            <ul>
+                                <li><a href="#">Search Jobs</a> </li>
+                                <li><a href="#">Students</a></li>
+                                <li><a href="#">Military Veterans</a></li>
+
+                            </ul>
+
+
+
+                        </section>
+
+
+                        <section class="nav-menu-item">
+
+                            <button onclick=" clickheight(2)">SUPPORT <i class="ri-arrow-down-s-line"></i></button>
+
+                            <ul>
+                                <li><a href="#">Support Home</a> </li>
+                                <li><a href="#">Online Services</a></li>
+
+                            </ul>
+
+
+
+                        </section>
+
+
+                    </section>
+                </section>
+                <section class="r-nav">
+                    <a href="#">LOGIN</a>
+                    <button>SIGN UP</button>
+                </section>
+            </section>
+
+
+
+
+        </nav>
+
+
+    </header>
+
+
+    <!-- <article style="height: 800px;"></article> -->
+
+
+    <main class="main">
+
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video class="d-block w-100" playsinline loop muted autoplay>
+                        <source src="https://www.activision.com/cdn/cod/modern-warfare-III.mp4">
+                    </video>
+                    <div class="banner">
+                        <img src="./img/MWIII_Logo_Horizontal.png" alt="">
+                        <div class="text-banner">
+                            Captain Price and TF 141 face off against <br> the ultimate
+                            threat in Call of Duty®: Modern Warfare® III
+                        </div>
+                        <div class="btn-banner">
+                            <button class="btn-banner1">PRE-ORDER MWIII</button>
+                            <button class="btn-banner2">VISIT SITE</button>
+                        </div>
+
+                    </div>
+                    <div class="video-img">
+                        <img src="./img/esrb-cod-vg-en.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <video class="d-block w-100" playsinline loop muted autoplay>
+                        <source src="https://www.activision.com/cdn/videos/callofduty-season5-mw2-warzone.mp4">
+                    </video>
+                    <div class="banner">
+                        <img src="./img/cod-s5-combo-logo.png" alt="">
+                        <div class="text-banner">
+                            CReunite with a former enemy and celebrate​<br> the ultimate
+                            ​50 years of hip hop history
+                        </div>
+                        <div class="btn-banner">
+                            <button class="btn-banner1">GET INTEL</button>
+                            <button class="btn-banner2">VISIT SITE</button>
+                        </div>
+
+                    </div>
+                    <div class="video-img">
+                        <img src="./img/esrb-cod-vg-en.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video class="d-block w-100" playsinline loop muted autoplay>
+                        <source src="https://video.activision.com/activision/cdn/videos/call-of-duty-mobile.mp4">
+                    </video>
+                    <div class="banner">
+                        <img src="./img/cod-mobile-logo-v2.png" alt="">
+                        <div class="text-banner">
+                            Available Now For iOS and Android!
+                        </div>
+                        <div class="btn-banner">
+                            <button class="btn-banner1">DOWNLOAD NOW</button>
+                            <button class="btn-banner2">VISIT SITE</button>
+                        </div>
+
+                    </div>
+                    <div class="video-img">
+                        <img src="./img/cod-mobile-esrb-en.png" alt="">
+                    </div>
+                </div>
+
+
+                <!-- Left and right controls/icons -->
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <section class="news">
+
+            <section class="news-header">
+                <section class="news-title">
+
+                    <h2>LATEST NEWS & ARTICLES</h2>
+
+                </section>
+
+                <ul>
+                    <li onclick="news(0)" class="news-item active2">
+                        <h4>ALL NEWS</h4>
+                    </li>
+                    <li onclick="news(1)" class="news-item">
+                        <img class="new-img" src="./img/activision-logo-small.svg" alt="">
+                    </li>
+                    <li onclick="news(2)" class="news-item">
+                        <img class="new-img" src="./img/cod-logo.svg" alt="">
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="news-content">
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-S05-ANTI-TOX-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>AUG 30, 2023</span>
+
+                        <h4>Anti-Toxicity Progress Report – Voice Chat Moderation</h4>
+
+                        <section class="card-line"></section>
+
+                        <p>Call of Duty’s anti-toxicity team details efforts to reduce disruptive in-game behavior
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-S05R-DRCZONE1-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>AUG 29, 2023</span>
+
+                        <h4>Call of Duty: Modern Warfare II DRC Zone 1 Map Intel
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>The Mission: Detailing the map, tactics, and tips for a 6v6 Multiplayer map set in the
+                            Defense Research Center in classified territory.
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/codm/CODM-S8-E-404-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>AUG 29, 2023</span>
+
+                        <h4>Introducing Call of Duty: Mobile Season 8 — ERROR 404
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>Reboot your skills in Kurohana Metropolis, an all-new Multiplayer map coming in Season 8.
+                            Battle around tight corners with the new Argus Shotgun, check out the new Super Slide
+                            playlist, earn rewards through new seasonal challenges, get a brand-new science
+                            fiction–themed Battle Pass, and more.
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwiii/MWIII-OPERATION-627-WALKTHROUGH-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>AUG 22, 2023</span>
+
+                        <h4>MWIII Announcement: Campaign, COD Next, and Beta Details
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>We break down the recently revealed Campaign footage from Operation 627. Also: details on
+                            this year’s Call of Duty Next on October 5, and the MWIII Multiplayer Beta.
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwiii/MWIII-OCM-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>AUG 23, 2023</span>
+
+                        <h4>MWIII - Intel Drop: Campaign Open Combat Missions
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>Task Force 141’s rules of engagement changed to fight the ultimate threat. Learn from
+                            Sledgehammer Games and Infinity Ward about Modern Warfare III’s Open Combat Missions in this
+                            deep dive.
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-S05-RELOADED-ANNOUNCEMENT-TOUT-2.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>AUG 28, 2023</span>
+
+                        <h4>MWII Content Drop: Season 05 Reloaded
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>A new Resurgence experience. The return of Armored Royale. Additional Multiplayer and DMZ
+                            features. Three new Operators and Weapons. New Weapon and Vehicle Challenges. And tons of
+                            content that can be Carried Forward to Call of Duty: Modern Warfare III. Season 05 is fully
+                            Reloaded.
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/COD-HOLIDAYGIFTGUIDE-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>DEC 02, 2020</span>
+
+                        <h4>Holiday Gift Guide: Call of Duty
+
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>Get ready to execute the mission with Call of Duty® and Black Ops Cold War themed performance
+                            and apparel items this holiday season. So don’t miss out! Here is some awesome merch for you
+                            and the Tier One Operators in your life.
+
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/activision/atvi-touchui/blog/activision/feature/CRASH-HOLIDAYGIFTGUIDE-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>DEC 02, 2020
+                        </span>
+
+                        <h4>Holiday Gift Guide: Crash Bandicoot
+
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>Searching for the perfect Holiday season gift? Look no further with new Crash Bandicoot™
+                            themed apparel, an art book, collectibles, and more that’s sure to please your Crash-crazy
+                            friends and family.
+
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+                <section class="news-cards">
+
+                    <section class="bg-img"
+                        style="background-image: url(https://www.activision.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/c-o-d-e/CODE-BOWL-IV-TOUT.jpg);">
+                    </section>
+
+                    <section class="card-text">
+
+                        <span>SEP 06, 2023
+                        </span>
+
+                        <h4>Announcing Call of Duty Endowment [C.O.D.E.] Bowl IV
+
+                        </h4>
+
+                        <section class="card-line"></section>
+
+                        <p>Get ready for C.O.D.E. Bowl IV, presented by USAA, where U.S., U.K., and Canadian military
+                            esports teams will compete alongside some of the top Call of Duty streamers to become the
+                            2023 champions.
+
+
+                        </p>
+
+                        <a href="#">READ MORE <i class="ri-arrow-right-s-fill"></i></a>
+                    </section>
+
+                </section>
+
+
+            </section>
+
+            <section class="news-btn">
+                <button>VIEW ALL</button>
+            </section>
+
+        </section>
+
+
+
+        <section class="help">
+            <section class="help-img">
+                <img src="./img/support-banner-v3.jpg" alt="">
+            </section>
+
+            <section class="help-banner">
+                <h4>WE'RE HERE TO HELP!</h4>
+                <p>Get answers to frequently asked questions, check server status, and engage with a support expert</p>
+                <button>VISIT SUPPORT</button>
+            </section>
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+
+
+        <section class="community">
+            <h2>COMMUNITY</h2>
+        </section>
+
+
+
+        <section class="join-us">
+            <section class="join-left">
+                <h1>HAVE FUN
+                </h1>
+                <h5>Learn More About <br> Job Opportunities</h5>
+
+                <button>JOIN US</button>
+            </section>
+            <section class="join-right">
+                <h3>OUR TEAMS
+                </h3>
+
+                <section>
+                    <ul>
+                        <li>GAME DESIGN
+                        </li>
+                        <li>ART & ANIMATION
+                        </li>
+                        <li>BRAND MANAGEMENT
+                        </li>
+                        <li>PRODUCTION</li>
+                        <li>QUALITY ASSURANCE
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>CUSTOMER SUPPORT
+                        </li>
+                        <li>STUDIO OPERATIONS
+                        </li>
+                        <li>PROGRAMMING
+                        </li>
+                        <li>FINANCE & ACCOUNTING
+                        </li>
+                        <li>HUMAN RESOURCES
+                        </li>
+                    </ul>
+                </section>
+
+            </section>
+        </section>
+
+
+        <section class="footer-main">
+            <section class="fallow-us">
+                <h4>FOLLOW US</h4>
+
+                <ul>
+                    <li><a href=""><i class="ri-facebook-box-fill"></i></a></li>
+                    <li><a href=""><i class="ri-twitter-fill"></i></a></li>
+                    <li><a href=""><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href=""><i class="ri-linkedin-box-fill"></i></a></li>
+                    <li><a href=""><i class="ri-instagram-fill"></i></a></li>
+                </ul>
+
+                <section>
+                    <img src="./img/esrb-e-m.jpg" alt="" class="f-img">
+                    <img src="./img/ESRB_updated.jpg" alt="" class="s-img">
+                </section>
+
+            </section>
+            <section class="footer-list">
+                <h4>POPULAR GAMES</h4>
+
+                <ul>
+                    <li><a href="">Call of Duty <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Tony Hawk Pro Skater <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Crash Bandicoot <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Spyro <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Sekiro <i class="ri-flashlight-line"></i></a></li>
+                </ul>
+            </section>
+            <section class="footer-list">
+                <h4>COMPANY</h4>
+
+                <ul>
+                    <li><a href="">Press <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Research <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Activision Blizzard <i class="ri-flashlight-line"></i></a></li>
+                    <li><a href="">Contact Us <i class="ri-flashlight-line"></i></a></li>
+                </ul>
+            </section>
+            <section class="footer-list">
+                <h4>LEGAL</h4>
+
+                <ul>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                    <li><a href="">Cookie Settings</a></li>
+                    <li><a href="">Online Safety</a></li>
+                    <li><a href="">Applicant Privacy Policy</a></li>
+                </ul>
+            </section>
+            <section class="top-menu-scroll">
+                <button onclick="topMenu()"><span>Back to top</span><i class="ri-arrow-up-line"></i></button>
+            </section>
+        </section>
+
+        <section class="footer-logo">
+            <section class="region">
+                <article>
+                    <p>please enter your region</p>
+                    <button class="footer-close-btn"><i class="ri-close-line"></i></button>
+                </article>
+                <section>
+                    <ul>
+                        <li><button class="li-btn" onclick="flag(this)"><img src="./img/region/icons8-usa-48.png" alt=""><i class="ri-check-line"></i></button></li>
+                        <li><button class="li-btn" onclick="flag(this)"><img src="./img/region/icons8-netherlands-48.png" alt=""></button></li>
+                        <li><button class="li-btn" onclick="flag(this)"><img src="./img/region/icons8-iran-48.png" alt=""></button></li>
+                    </ul>
+                    <ul>
+                        <li><button class="li-btn" onclick="flag(this)"><img src="./img/region/icons8-great-britain-48.png" alt=""></button></li>
+                        <li><button class="li-btn" onclick="flag(this)"><img src="./img/region/icons8-canada-48.png" alt=""></button></li>
+                        <li><button class="li-btn" onclick="flag(this )"><img src="./img/region/icons8-brazil-48.png" alt=""></button></li>
+                    </ul>
+                </section>
+               
+            </section>
+            <button class="footer-open-btn"> <img src="./img/region/icons8-usa-48.png" alt=""></button>
+            <section class="footer-end">
+                <img src="./img/activision-logo.svg" alt="">
+                <p>Copyright 2023 Activision Publishing, Inc.</p>
+            </section>
+        </section>
+
+    </footer>
+
+
+
+
+    <script src="./js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
