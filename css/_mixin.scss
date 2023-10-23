@@ -1,0 +1,8 @@
+@mixin border($side,$value) {
+    border-#{$side}: .5px solid $value ;
+}
+
+@mixin transition($type,$time) {
+    transition: $type $time;
+}
+
